@@ -6,7 +6,7 @@ Framework uses remote JSON file with message, action URL, time when message shou
 
 ## How to use SRNotification
 
-1\. Add framework to your project: File -> Add Files -> SRNotification project file
+1\. Add framework to your project: File -> Add Files -> SRNotification project file. Add `@loader_path/../Frameworks` to build settings Runpath search path.
 
 2\. In your AppDelegate add this
 
