@@ -73,4 +73,4 @@ Parameters:
 
 ## Requirements
 
-SRNotification require AppKit >= 10.9, but could be integrated in any project since 10.6 (but it won't work there)
+SRNotification requires AppKit >= 10.9, but could be integrated in any project since 10.6 (but it won't work there)
