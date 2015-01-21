@@ -63,7 +63,7 @@ Parameters:
 
 **url** - Where user will be redirected if he press the button.
 
-**date** - Date when message should be shown.
+**date** - Date when message should be shown converted to GMT.
 
 **button** - Text on button with action.
 
