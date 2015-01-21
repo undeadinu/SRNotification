@@ -90,6 +90,12 @@ NSString * const SRNotificationsURLKey = @"srn_url";
                             return;
                         }
                         
+                        // NSLog(@"date (%@) - %@", [NSDate date], data.date);
+
+                        if (data.showAnyway && [data.date compare:[NSDate date]] == NSOrderedAscending) {
+                            data.date = nil;
+                        }
+                        
                         [self scheduleNotification:data];
                     } else {
                         // NSLog(@"Notification '%@' ignored", data.identifier);
