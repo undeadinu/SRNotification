@@ -36,6 +36,10 @@ self.notifications = [[SRNotifications alloc] init];
 
 You should pass aNotification object to the framework since if you app is offline, after user click notification, app will be started and message action should be made.
 
+5\. Enable alert notifications 
+
+If you want do not want your notifications dissapear after several seconds, add key `NSUserNotificationAlertStyle` and set it to `alert` into your info.plist.
+
 ## Format of JSON file
 
 Here is the sample JSON file:
