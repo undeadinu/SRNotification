@@ -30,7 +30,7 @@ self.notification = [[SRNotification alloc] init];
 For example, for update every hour:
 
 ```objective-c
-self.notification = [[SRNotifications alloc] init];
+self.notification = [[SRNotification alloc] init];
 [self.notification trackURL:[NSURL URLWithString:@"http://mysite.com/remote_message.json"]  updateInterval:60*60 startupNotification:aNotification];
 ```
 
