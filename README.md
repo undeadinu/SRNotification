@@ -6,7 +6,7 @@ Framework uses remote JSON file with message, action URL, time when message shou
 
 ## How to use SRNotification
 
-1\. Add framework to your project: File -> Add Files -> SRNotification project file
+1\. Add framework to your project: File -> Add Files -> SRNotification project file. Add `@loader_path/../Frameworks` to build settings Runpath search path.
 
 2\. In your AppDelegate add this
 
@@ -17,21 +17,21 @@ Framework uses remote JSON file with message, action URL, time when message shou
 3\. Add instance variable to hold SRNotification instance:
 
 ```objective-c
-@property (strong) SRNotifications *notifications;
+@property (strong) SRNotification *notification;
 ```
 	
 4\. Later in applicationDidFinishLaunching: (NSNotification *) aNotification:
 
 ```objective-c
-self.notifications = [[SRNotifications alloc] init];
-[self.notifications trackURL:Remote-message-URL  updateInterval:Update-interval-in-seconds startupNotification:aNotification];
+self.notification = [[SRNotification alloc] init];
+[self.notification trackURL:Remote-message-URL  updateInterval:Update-interval-in-seconds startupNotification:aNotification];
 ```
 	
 For example, for update every hour:
 
 ```objective-c
-self.notifications = [[SRNotifications alloc] init];
-[self.notifications trackURL:[NSURL URLWithString:@"http://mysite.com/remote_message.json"]  updateInterval:60*60 startupNotification:aNotification];
+self.notification = [[SRNotification alloc] init];
+[self.notification trackURL:[NSURL URLWithString:@"http://mysite.com/remote_message.json"]  updateInterval:60*60 startupNotification:aNotification];
 ```
 
 You should pass aNotification object to the framework since if you app is offline, after user click notification, app will be started and message action should be made.
