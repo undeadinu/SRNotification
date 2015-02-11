@@ -7,6 +7,7 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "NotificationData.h"
 
 //! Project version number for SRNotification.
 FOUNDATION_EXPORT double SRNotificationVersionNumber;
@@ -19,6 +20,7 @@ FOUNDATION_EXPORT const unsigned char SRNotificationVersionString[];
 @interface SRNotification : NSObject
 
 - (void) trackURL: (NSURL *) url updateInterval: (NSTimeInterval) updateInterval startupNotification: (NSNotification *) notification;
+- (void) scheduleNotification: (NotificationData *) data;
 
 @end
 

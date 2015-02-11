@@ -7,15 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3216AED21A8BAC4100D7A53C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3216AED11A8BAC4100D7A53C /* AppDelegate.m */; };
+		3216AED41A8BAC4100D7A53C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3216AED31A8BAC4100D7A53C /* main.m */; };
+		3216AED61A8BAC4100D7A53C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3216AED51A8BAC4100D7A53C /* Images.xcassets */; };
+		3216AED91A8BAC4100D7A53C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3216AED71A8BAC4100D7A53C /* MainMenu.xib */; };
+		3216AEEE1A8BACAC00D7A53C /* SRNotification.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 328742C31A6F74A8009AC679 /* SRNotification.framework */; };
 		328742C91A6F74A8009AC679 /* SRNotification.h in Headers */ = {isa = PBXBuildFile; fileRef = 328742C81A6F74A8009AC679 /* SRNotification.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		328742E01A6F751A009AC679 /* SRNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 328742DF1A6F751A009AC679 /* SRNotification.m */; };
 		328742E51A6F7535009AC679 /* AsyncDataLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 328742E11A6F7535009AC679 /* AsyncDataLoader.h */; };
 		328742E61A6F7535009AC679 /* AsyncDataLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 328742E21A6F7535009AC679 /* AsyncDataLoader.m */; };
-		328742E71A6F7535009AC679 /* NotificationData.h in Headers */ = {isa = PBXBuildFile; fileRef = 328742E31A6F7535009AC679 /* NotificationData.h */; };
+		328742E71A6F7535009AC679 /* NotificationData.h in Headers */ = {isa = PBXBuildFile; fileRef = 328742E31A6F7535009AC679 /* NotificationData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		328742E81A6F7535009AC679 /* NotificationData.m in Sources */ = {isa = PBXBuildFile; fileRef = 328742E41A6F7535009AC679 /* NotificationData.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3216AEEC1A8BACA800D7A53C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 328742BA1A6F74A8009AC679 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 328742C21A6F74A8009AC679;
+			remoteInfo = SRNotification;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3216AECC1A8BAC4100D7A53C /* SRNotificationSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRNotificationSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3216AECF1A8BAC4100D7A53C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3216AED01A8BAC4100D7A53C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3216AED11A8BAC4100D7A53C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3216AED31A8BAC4100D7A53C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3216AED51A8BAC4100D7A53C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3216AED81A8BAC4100D7A53C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		328742C31A6F74A8009AC679 /* SRNotification.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SRNotification.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		328742C71A6F74A8009AC679 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		328742C81A6F74A8009AC679 /* SRNotification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SRNotification.h; sourceTree = "<group>"; };
@@ -27,6 +49,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3216AEC91A8BAC4100D7A53C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3216AEEE1A8BACAC00D7A53C /* SRNotification.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		328742BF1A6F74A8009AC679 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +67,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3216AECD1A8BAC4100D7A53C /* SRNotificationSample */ = {
+			isa = PBXGroup;
+			children = (
+				3216AED01A8BAC4100D7A53C /* AppDelegate.h */,
+				3216AED11A8BAC4100D7A53C /* AppDelegate.m */,
+				3216AED51A8BAC4100D7A53C /* Images.xcassets */,
+				3216AED71A8BAC4100D7A53C /* MainMenu.xib */,
+				3216AECE1A8BAC4100D7A53C /* Supporting Files */,
+			);
+			path = SRNotificationSample;
+			sourceTree = "<group>";
+		};
+		3216AECE1A8BAC4100D7A53C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3216AECF1A8BAC4100D7A53C /* Info.plist */,
+				3216AED31A8BAC4100D7A53C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		328742B91A6F74A8009AC679 = {
 			isa = PBXGroup;
 			children = (
 				328742C51A6F74A8009AC679 /* SRNotification */,
+				3216AECD1A8BAC4100D7A53C /* SRNotificationSample */,
 				328742C41A6F74A8009AC679 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				328742C31A6F74A8009AC679 /* SRNotification.framework */,
+				3216AECC1A8BAC4100D7A53C /* SRNotificationSample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -91,6 +144,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		3216AECB1A8BAC4100D7A53C /* SRNotificationSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3216AEEA1A8BAC4200D7A53C /* Build configuration list for PBXNativeTarget "SRNotificationSample" */;
+			buildPhases = (
+				3216AEC81A8BAC4100D7A53C /* Sources */,
+				3216AEC91A8BAC4100D7A53C /* Frameworks */,
+				3216AECA1A8BAC4100D7A53C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3216AEED1A8BACA800D7A53C /* PBXTargetDependency */,
+			);
+			name = SRNotificationSample;
+			productName = SRNotificationSample;
+			productReference = 3216AECC1A8BAC4100D7A53C /* SRNotificationSample.app */;
+			productType = "com.apple.product-type.application";
+		};
 		328742C21A6F74A8009AC679 /* SRNotification */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 328742D91A6F74A8009AC679 /* Build configuration list for PBXNativeTarget "SRNotification" */;
@@ -118,6 +189,9 @@
 				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = "Dmitry Nikolaev";
 				TargetAttributes = {
+					3216AECB1A8BAC4100D7A53C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
 					328742C21A6F74A8009AC679 = {
 						CreatedOnToolsVersion = 6.1.1;
 					};
@@ -129,6 +203,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 328742B91A6F74A8009AC679;
 			productRefGroup = 328742C41A6F74A8009AC679 /* Products */;
@@ -136,11 +211,21 @@
 			projectRoot = "";
 			targets = (
 				328742C21A6F74A8009AC679 /* SRNotification */,
+				3216AECB1A8BAC4100D7A53C /* SRNotificationSample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3216AECA1A8BAC4100D7A53C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3216AED61A8BAC4100D7A53C /* Images.xcassets in Resources */,
+				3216AED91A8BAC4100D7A53C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		328742C11A6F74A8009AC679 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,6 +236,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3216AEC81A8BAC4100D7A53C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3216AED41A8BAC4100D7A53C /* main.m in Sources */,
+				3216AED21A8BAC4100D7A53C /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		328742BE1A6F74A8009AC679 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -163,7 +257,54 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		3216AEED1A8BACA800D7A53C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 328742C21A6F74A8009AC679 /* SRNotification */;
+			targetProxy = 3216AEEC1A8BACA800D7A53C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3216AED71A8BAC4100D7A53C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3216AED81A8BAC4100D7A53C /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		3216AEE61A8BAC4200D7A53C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SRNotificationSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3216AEE71A8BAC4200D7A53C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = SRNotificationSample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		328742D71A6F74A8009AC679 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -281,6 +422,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3216AEEA1A8BAC4200D7A53C /* Build configuration list for PBXNativeTarget "SRNotificationSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3216AEE61A8BAC4200D7A53C /* Debug */,
+				3216AEE71A8BAC4200D7A53C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		328742BD1A6F74A8009AC679 /* Build configuration list for PBXProject "SRNotification" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -297,6 +446,7 @@
 				328742DB1A6F74A8009AC679 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
